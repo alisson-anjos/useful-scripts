@@ -1,0 +1,1 @@
+ scenedetect -i ".\Too Late For The Worm Guys  ¦ Men In Black II ¦ Creature Features (1080p_24fps_H264-128kbit_AAC).mp4" split-video time -d 33
