@@ -1,165 +1,131 @@
 import os
-import re
-import math
 import argparse
+import subprocess
+from scenedetect import open_video, SceneManager
+from scenedetect.detectors import ContentDetector
 
-from moviepy import *
-
-
-def get_trailing_number(filename: str):
+def detect_scenes(video_path):
     """
-    Returns the integer if `filename` (minus extension) ends with `_<digits>`.
-    Otherwise returns None.
-    Example:
-      "video_1.mp4" -> 1
-      "movie_25.mp4" -> 25
-      "test.mp4" -> None
+    Detecta cenas em um vídeo usando PySceneDetect.
+
+    Args:
+        video_path (str): Caminho para o arquivo de vídeo.
+
+    Returns:
+        List[Tuple[float, float]]: Lista de cenas com tempos de início e fim (em segundos).
     """
-    # remove extension
-    base, ext = os.path.splitext(filename)
-    match = re.search(r"_([0-9]+)$", base)
-    if match:
-        return int(match.group(1))
-    return None
+    video = open_video(video_path)
+    scene_manager = SceneManager()
+    scene_manager.add_detector(ContentDetector())
 
+    scene_manager.detect_scenes(video)
+    scene_list = scene_manager.get_scene_list()
 
-def create_video_mosaic_with_titles(input_directory, output_file, bg_color=None):
+    return [(scene[0].get_seconds(), scene[1].get_seconds()) for scene in scene_list]
+
+def extract_scenes_ffmpeg(video_path, output_dir, scenes, target_fps=24, duration_sec=None, num_frames=None, reverse=False):
     """
-    1) Collect all .mp4 files in `input_directory`.
-    2) Sort them so any file ending with _NUMBER goes first in ascending numeric order,
-       and any file without trailing _NUMBER is sorted alphabetically afterward.
-    3) Overlay each clip with a text clip showing its filename.
-    4) Arrange these labeled clips in a matrix (mosaic) with clips_array().
-    5) Write the final mosaic to `output_file`.
+    Extrai as cenas detectadas usando FFmpeg.
+
+    Args:
+        video_path (str): Caminho do vídeo original.
+        output_dir (str): Diretório para salvar as cenas extraídas.
+        scenes (list): Lista de tuplas (start, end) das cenas detectadas.
+        target_fps (int): FPS desejado para os vídeos extraídos.
+        duration_sec (float): Limita a duração máxima de cada cena.
+        num_frames (int): Define um número fixo de frames a serem extraídos.
+        reverse (bool): Inverte o vídeo extraído.
     """
+    os.makedirs(output_dir, exist_ok=True)
 
-    #########################
-    # 1) Collect .mp4 files #
-    #########################
-    all_files_in_dir = sorted(
-        f for f in os.listdir(input_directory) if f.lower().endswith(".mp4")
-    )
-    if not all_files_in_dir:
-        print(f"No .mp4 files found in '{input_directory}'")
-        return
+    for i, (start, end) in enumerate(scenes):
+        scene_duration = end - start
 
-    #######################################################
-    # 2) Sort by trailing number, then alphabetical order #
-    #######################################################
-    def sort_key(fname):
-        trailing_num = get_trailing_number(fname)
-        if trailing_num is not None:
-            # Put numeric-tail files first, sorted by the trailing number
-            return (0, trailing_num)
-        else:
-            # Then put everything else in alphabetical order
-            return (1, fname)
+        if duration_sec and scene_duration > duration_sec:
+            end = start + duration_sec
+        elif num_frames:
+            frame_duration = num_frames / target_fps
+            if scene_duration > frame_duration:
+                end = start + frame_duration
 
-    video_files = sorted(all_files_in_dir, key=sort_key)
+        base_name = os.path.basename(video_path)
+        name, ext = os.path.splitext(base_name)
+        output_name = f"{name}_scene_{i+1:03d}{ext}"
+        output_path = os.path.join(output_dir, output_name)
 
-    print("Final sorted order:")
-    for vf in video_files:
-        print("  ", vf)
+        ffmpeg_cmd = [
+            "ffmpeg", "-hide_banner", "-loglevel", "error",
+            "-i", video_path, 
+            "-ss", str(start),
+            "-to", str(end),
+            "-r", str(target_fps),
+            "-c:v", "libx264",
+            "-preset", "fast",
+            "-crf", "23",
+            "-c:a", "aac", "-b:a", "128k",
+            output_path
+        ]
 
-    labeled_clips = []
-    for vf in video_files:
-        full_path = os.path.join(input_directory, vf)
+        if reverse:
+            ffmpeg_cmd.insert(-1, "-vf")
+            ffmpeg_cmd.insert(-1, "reverse")
 
-        # Load video
-        clip = VideoFileClip(full_path)
+        subprocess.run(ffmpeg_cmd, check=True)
+        print(f"Salvou: {output_path}")
 
-        # Create text overlay (NEW TextClip)
-        text_overlay = TextClip(
-            font="arial.ttf",     # Provide a valid .ttf/.otf font path
-            text=vf,              # The filename
-            font_size=20,
-            color="white",
-            stroke_color="black",
-            stroke_width=2,
-            method="label",       # 'label' auto-sizes; 'caption' requires fixed size
-            text_align="center",
-            horizontal_align="center",
-            vertical_align="top",
-            interline=4,
-            transparent=True,
-            duration=clip.duration
-        )
+def process_directory(input_dir, output_dir, **kwargs):
+    """
+    Processa todos os vídeos dentro de um diretório.
 
-        # Position text at top-center
-        text_overlay = text_overlay.with_position(("center", "top"))
+    Args:
+        input_dir (str): Diretório contendo os vídeos.
+        output_dir (str): Diretório onde os vídeos processados serão salvos.
+        kwargs: Parâmetros a serem passados para `extract_scenes_ffmpeg`.
+    """
+    video_extensions = ('.mp4', '.avi', '.mov', '.mkv', '.flv')
 
-        # Composite the original clip + text
-        clip_with_text = CompositeVideoClip([clip, text_overlay])
-        labeled_clips.append(clip_with_text)
+    for root, _, files in os.walk(input_dir):
+        for file in files:
+            if file.lower().endswith(video_extensions):
+                input_path = os.path.join(root, file)
+                rel_path = os.path.relpath(root, input_dir)
+                dest_dir = os.path.join(output_dir, rel_path)
 
-    ###############################################
-    # 3) Build a mosaic (matrix) by rows & cols.  #
-    ###############################################
-    n = len(labeled_clips)
-    n_cols = math.ceil(math.sqrt(n))
-    n_rows = math.ceil(n / n_cols)
+                try:
+                    print(f"Detectando cenas em: {input_path}")
+                    scenes = detect_scenes(input_path)
 
-    matrix_of_clips = []
-    idx = 0
-    for _ in range(n_rows):
-        row_clips = []
-        for _ in range(n_cols):
-            if idx < n:
-                row_clips.append(labeled_clips[idx])
-            else:
-                # Fill blank if no more clips
-                blank = ColorClip(size=(128, 128), color=(0, 0, 0)).with_duration(1)
-                row_clips.append(blank)
-            idx += 1
-        matrix_of_clips.append(row_clips)
+                    if not scenes:
+                        print(f"Nenhuma cena detectada para {input_path}, pulando...")
+                        continue
 
-    #####################################
-    # 4) Create mosaic and write output #
-    #####################################
-    final_clip = clips_array(matrix_of_clips, bg_color=bg_color)
-    final_clip.write_videofile(output_file)
+                    extract_scenes_ffmpeg(input_path, dest_dir, scenes, **kwargs)
+                except Exception as e:
+                    print(f"Erro ao processar {input_path}: {str(e)}")
 
-
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Arrange .mp4 files in a folder into a mosaic, each labeled with its filename. "
-                    "Files ending with _NUMBER come first in ascending numeric order."
+        description="Ferramenta de processamento de vídeo com detecção de cenas e extração via FFmpeg",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    parser.add_argument(
-        "-i", "--input_directory",
-        type=str,
-        required=True,
-        help="Path to the directory containing .mp4 files."
-    )
-    parser.add_argument(
-        "-o", "--output_file",
-        type=str,
-        required=True,
-        help="Name/path for the output .mp4 file."
-    )
-    parser.add_argument(
-        "--bg_color",
-        default=None,
-        help="Background color in 'R,G,B' form or None for transparent."
-    )
+
+    parser.add_argument("input_dir", help="Diretório contendo os vídeos")
+    parser.add_argument("output_dir", help="Diretório de saída para as cenas extraídas")
+    parser.add_argument("--fps", type=int, default=24, help="FPS desejado")
+    parser.add_argument("--duration", type=float, help="Limite de duração por cena")
+    parser.add_argument("--frames", type=int, help="Número de frames a extrair (alternativa à duração)")
+    parser.add_argument("--reverse", action="store_true", help="Reverter os vídeos extraídos")
 
     args = parser.parse_args()
 
-    bg_color_tuple = None
-    if args.bg_color:
-        try:
-            r, g, b = map(int, args.bg_color.split(","))
-            bg_color_tuple = (r, g, b)
-        except:
-            print("Invalid bg_color format. Using None (transparent).")
-            bg_color_tuple = None
+    if args.duration and args.frames:
+        parser.error("Não é possível especificar ambos --duration e --frames")
 
-    create_video_mosaic_with_titles(
-        input_directory=args.input_directory,
-        output_file=args.output_file,
-        bg_color=bg_color_tuple
+    process_directory(
+        args.input_dir,
+        args.output_dir,
+        target_fps=args.fps,
+        duration_sec=args.duration,
+        num_frames=args.frames,
+        reverse=args.reverse
     )
-
-
-if __name__ == "__main__":
-    main()

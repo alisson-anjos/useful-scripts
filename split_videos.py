@@ -218,17 +218,17 @@ if __name__ == "__main__":
         description="Split videos into segments with an exact number of frames using FFmpeg with multiprocessing."
     )
     parser.add_argument(
-        "input_folder",
+        "-input_folder",
         type=str,
         help="Path to the input folder containing videos."
     )
     parser.add_argument(
-        "output_folder",
+        "-output_folder",
         type=str,
         help="Path to the output folder where segments will be saved."
     )
     parser.add_argument(
-        "frames_per_segment",
+        "-frames_per_segment",
         type=int,
         help="Number of frames per segment."
     )
