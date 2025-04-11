@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 from scenedetect import detect, ContentDetector
 
 def get_video_resolution(video_path):
-    """Obtém a resolução original do vídeo."""
+    """Gets the original resolution of the video."""
     cmd = [
         "ffprobe", "-v", "error",
         "-select_streams", "v:0",
@@ -19,21 +19,21 @@ def get_video_resolution(video_path):
     return width, height
 
 def calculate_scaled_resolution(original_width, original_height, target_size):
-    """Calcula a resolução proporcional mantendo a aspect ratio."""
+    """Calculates proportional resolution while maintaining aspect ratio."""
     if original_width >= original_height:
         new_width = target_size
         new_height = int((original_height / original_width) * new_width)
     else:
         new_height = target_size
         new_width = int((original_width / original_height) * new_height)
-    
+
     if new_height % 2 != 0:
-        new_height += 1  # Garante que a altura seja par
-    
+        new_height += 1  # Ensures height is even
+
     return new_width, new_height
 
 def convert_fps(video_path, output_dir, target_fps, resize=None):
-    """Ajusta o FPS do vídeo e faz downscale proporcional se necessário."""
+    """Adjusts the video's FPS and performs proportional downscale if needed."""
     os.makedirs(output_dir, exist_ok=True)
 
     base_name = os.path.basename(video_path)
@@ -41,7 +41,7 @@ def convert_fps(video_path, output_dir, target_fps, resize=None):
     output_path = os.path.join(output_dir, f"{name}_adjusted{ext}")
 
     if os.path.exists(output_path):
-        print(f"🔄 Vídeo já convertido, pulando: {output_path}")
+        print(f"🔄 Video already converted, skipping: {output_path}")
         return output_path
 
     scale_filter = ""
@@ -63,30 +63,30 @@ def convert_fps(video_path, output_dir, target_fps, resize=None):
     ]
 
     subprocess.run(ffmpeg_cmd, check=True)
-    print(f"✅ FPS ajustado e salvo: {output_path} (Resolução: {resize if resize else 'Original'})")
+    print(f"✅ FPS adjusted and saved: {output_path} (Resolution: {resize if resize else 'Original'})")
     return output_path
 
 def detect_scenes(video_path, min_duration):
-    """Detecta cenas e filtra as que são menores que `min_duration`."""
+    """Detects scenes and filters out those shorter than `min_duration`."""
     scenes = detect(video_path, ContentDetector(), show_progress=True)
 
-    print(f"🔍 Cenas detectadas em {video_path}: {len(scenes)}")
+    print(f"🔍 Scenes detected in {video_path}: {len(scenes)}")
 
     if len(scenes) == 0:
-        print(f"⚠️ Nenhuma cena detectada, copiando vídeo inteiro como cena única.")
-        return [(0, None)]  # Representa o vídeo inteiro
+        print(f"⚠️ No scenes detected, copying the entire video as a single scene.")
+        return [(0, None)]  # Represents the entire video
 
-    # Filtra cenas que tenham pelo menos `min_duration` segundos
+    # Filter scenes with at least `min_duration` seconds
     filtered_scenes = [(start, end) for start, end in scenes if (end.get_seconds() - start.get_seconds()) >= min_duration]
 
     if len(filtered_scenes) == 0:
-        print(f"⚠️ Nenhuma cena maior que {min_duration}s, copiando vídeo inteiro.")
-        return [(0, None)]  # Copia o vídeo inteiro
+        print(f"⚠️ No scene longer than {min_duration}s, copying the entire video.")
+        return [(0, None)]
 
     return filtered_scenes
 
 def extract_scenes_ffmpeg(video_path, output_dir, scenes, target_fps=24, max_scenes=None):
-    """Extrai cenas detectadas usando FFmpeg."""
+    """Extracts detected scenes using FFmpeg."""
     os.makedirs(output_dir, exist_ok=True)
     scene_count = 1
 
@@ -101,7 +101,7 @@ def extract_scenes_ffmpeg(video_path, output_dir, scenes, target_fps=24, max_sce
 
         if end is None:
             shutil.copy(video_path, output_path)
-            print(f"📂 Nenhuma cena detectada ou válida, copiando o vídeo inteiro para: {output_path}")
+            print(f"📂 No scene detected or valid, copying full video to: {output_path}")
         else:
             ffmpeg_cmd = [
                 "ffmpeg", "-hide_banner", "-loglevel", "error",
@@ -116,18 +116,18 @@ def extract_scenes_ffmpeg(video_path, output_dir, scenes, target_fps=24, max_sce
                 output_path
             ]
             subprocess.run(ffmpeg_cmd, check=True)
-            print(f"🎬 Cena extraída: {output_path}")
+            print(f"🎬 Scene extracted: {output_path}")
 
         scene_count += 1
 
 def process_videos_in_two_phases(input_dir, output_dir, target_fps, resize=None, threads=1, min_duration=0, max_scenes=None):
-    """Primeiro converte todos os vídeos e depois detecta e extrai as cenas."""
+    """First converts all videos, then detects and extracts scenes."""
     video_extensions = ('.mp4', '.avi', '.mov', '.mkv', '.flv')
 
     converted_videos_dir = os.path.join(output_dir, "converted")
     extracted_videos_dir = os.path.join(output_dir, "extracted")
 
-    # 📌 **Fase 1: Ajustar FPS e resolução**
+    # 📌 **Phase 1: Adjust FPS and resolution**
     video_files = []
     for root, _, files in os.walk(input_dir):
         for file in files:
@@ -145,9 +145,9 @@ def process_videos_in_two_phases(input_dir, output_dir, target_fps, resize=None,
                 if converted_path:
                     converted_videos.append(converted_path)
             except Exception as e:
-                print(f"❌ Erro ao converter FPS do vídeo {futures[future]}: {str(e)}")
+                print(f"❌ Error converting FPS for video {futures[future]}: {str(e)}")
 
-    # 📌 **Fase 2: Detectar e extrair cenas**
+    # 📌 **Phase 2: Detect and extract scenes**
     with ThreadPoolExecutor(max_workers=threads) as executor:
         futures = {}
         for v in converted_videos:
@@ -159,18 +159,18 @@ def process_videos_in_two_phases(input_dir, output_dir, target_fps, resize=None,
             try:
                 future.result()
             except Exception as e:
-                print(f"❌ Erro ao processar {futures[future]}: {str(e)}")
+                print(f"❌ Error processing {futures[future]}: {str(e)}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Processamento de vídeos: Ajuste de FPS, resolução, detecção de cenas e extração via FFmpeg")
+    parser = argparse.ArgumentParser(description="Video Processing: FPS adjustment, resolution resize, scene detection and extraction using FFmpeg")
 
-    parser.add_argument("input_dir", help="Diretório contendo os vídeos originais")
-    parser.add_argument("output_dir", help="Diretório para salvar os vídeos ajustados e as cenas extraídas")
-    parser.add_argument("--fps", type=int, default=24, help="FPS desejado")
-    parser.add_argument("--resize", type=int, help="Maior lado da resolução (Ex: 1024, 1920)")
-    parser.add_argument("--duration", type=float, default=0, help="Duração mínima da cena (segundos)")
-    parser.add_argument("--threads", type=int, default=1, help="Número de threads para paralelismo")
-    parser.add_argument("--max-scenes", type=int, help="Número máximo de cenas a extrair por vídeo")
+    parser.add_argument("input_dir", help="Directory containing the original videos")
+    parser.add_argument("output_dir", help="Directory to save adjusted videos and extracted scenes")
+    parser.add_argument("--fps", type=int, default=24, help="Desired FPS")
+    parser.add_argument("--resize", type=int, help="Target resolution's longest side (e.g., 1024, 1920)")
+    parser.add_argument("--duration", type=float, default=0, help="Minimum scene duration (seconds)")
+    parser.add_argument("--threads", type=int, default=1, help="Number of threads for parallel processing")
+    parser.add_argument("--max-scenes", type=int, help="Maximum number of scenes to extract per video")
 
     args = parser.parse_args()
 
