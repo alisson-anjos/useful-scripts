@@ -1,2 +1,15 @@
-moviepy
+torch
+safetensors
+transformers
+Pillow
+tqdm
+opencv-python
+ultralytics
+requests
+beautifulsoup4
+google-generativeai
+ollama
+numpy
 imageio
+moviepy
+PIL
