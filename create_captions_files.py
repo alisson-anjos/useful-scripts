@@ -10,7 +10,7 @@ def create_txt_files(directory, content):
     """
 
     # Define valid video file extensions
-    video_extensions = (".mp4", ".avi", ".mkv", ".mov", ".wmv", ".flv", ".mpeg")
+    video_extensions = (".mp4", ".avi", ".mkv", ".mov", ".wmv", ".flv", ".mpeg", ".png", ".jpg")
 
     # Check if the directory exists
     if not os.path.isdir(directory):

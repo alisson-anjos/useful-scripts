@@ -1,0 +1,1805 @@
+Conversão LoRA WAN 2.1 1.3B -> 14B
+==================================================
+Método de interpolação: bilinear
+Alpha scaling: 1.0
+
+other: lora_unet_blocks_0_cross_attn_k.alpha -> lora_unet_blocks_0_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_cross_attn_k.lora_down.weight -> lora_unet_blocks_0_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_cross_attn_k.lora_up.weight -> lora_unet_blocks_0_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_cross_attn_o.alpha -> lora_unet_blocks_0_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_cross_attn_o.lora_down.weight -> lora_unet_blocks_0_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_cross_attn_o.lora_up.weight -> lora_unet_blocks_0_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_cross_attn_q.alpha -> lora_unet_blocks_0_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_cross_attn_q.lora_down.weight -> lora_unet_blocks_0_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_cross_attn_q.lora_up.weight -> lora_unet_blocks_0_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_cross_attn_v.alpha -> lora_unet_blocks_0_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_cross_attn_v.lora_down.weight -> lora_unet_blocks_0_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_cross_attn_v.lora_up.weight -> lora_unet_blocks_0_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_ffn_0.alpha -> lora_unet_blocks_0_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_ffn_0.lora_down.weight -> lora_unet_blocks_0_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_ffn_0.lora_up.weight -> lora_unet_blocks_0_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_0_ffn_2.alpha -> lora_unet_blocks_0_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_ffn_2.lora_down.weight -> lora_unet_blocks_0_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_0_ffn_2.lora_up.weight -> lora_unet_blocks_0_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_self_attn_k.alpha -> lora_unet_blocks_0_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_self_attn_k.lora_down.weight -> lora_unet_blocks_0_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_self_attn_k.lora_up.weight -> lora_unet_blocks_0_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_self_attn_o.alpha -> lora_unet_blocks_0_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_self_attn_o.lora_down.weight -> lora_unet_blocks_0_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_self_attn_o.lora_up.weight -> lora_unet_blocks_0_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_self_attn_q.alpha -> lora_unet_blocks_0_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_self_attn_q.lora_down.weight -> lora_unet_blocks_0_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_self_attn_q.lora_up.weight -> lora_unet_blocks_0_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_0_self_attn_v.alpha -> lora_unet_blocks_0_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_0_self_attn_v.lora_down.weight -> lora_unet_blocks_0_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_0_self_attn_v.lora_up.weight -> lora_unet_blocks_0_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_cross_attn_k.alpha -> lora_unet_blocks_10_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_cross_attn_k.lora_down.weight -> lora_unet_blocks_10_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_cross_attn_k.lora_up.weight -> lora_unet_blocks_10_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_cross_attn_o.alpha -> lora_unet_blocks_10_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_cross_attn_o.lora_down.weight -> lora_unet_blocks_10_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_cross_attn_o.lora_up.weight -> lora_unet_blocks_10_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_cross_attn_q.alpha -> lora_unet_blocks_10_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_cross_attn_q.lora_down.weight -> lora_unet_blocks_10_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_cross_attn_q.lora_up.weight -> lora_unet_blocks_10_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_cross_attn_v.alpha -> lora_unet_blocks_10_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_cross_attn_v.lora_down.weight -> lora_unet_blocks_10_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_cross_attn_v.lora_up.weight -> lora_unet_blocks_10_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_ffn_0.alpha -> lora_unet_blocks_10_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_ffn_0.lora_down.weight -> lora_unet_blocks_10_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_ffn_0.lora_up.weight -> lora_unet_blocks_10_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_10_ffn_2.alpha -> lora_unet_blocks_10_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_ffn_2.lora_down.weight -> lora_unet_blocks_10_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_10_ffn_2.lora_up.weight -> lora_unet_blocks_10_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_self_attn_k.alpha -> lora_unet_blocks_10_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_self_attn_k.lora_down.weight -> lora_unet_blocks_10_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_self_attn_k.lora_up.weight -> lora_unet_blocks_10_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_self_attn_o.alpha -> lora_unet_blocks_10_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_self_attn_o.lora_down.weight -> lora_unet_blocks_10_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_self_attn_o.lora_up.weight -> lora_unet_blocks_10_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_self_attn_q.alpha -> lora_unet_blocks_10_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_self_attn_q.lora_down.weight -> lora_unet_blocks_10_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_self_attn_q.lora_up.weight -> lora_unet_blocks_10_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_10_self_attn_v.alpha -> lora_unet_blocks_10_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_10_self_attn_v.lora_down.weight -> lora_unet_blocks_10_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_10_self_attn_v.lora_up.weight -> lora_unet_blocks_10_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_cross_attn_k.alpha -> lora_unet_blocks_11_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_cross_attn_k.lora_down.weight -> lora_unet_blocks_11_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_cross_attn_k.lora_up.weight -> lora_unet_blocks_11_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_cross_attn_o.alpha -> lora_unet_blocks_11_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_cross_attn_o.lora_down.weight -> lora_unet_blocks_11_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_cross_attn_o.lora_up.weight -> lora_unet_blocks_11_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_cross_attn_q.alpha -> lora_unet_blocks_11_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_cross_attn_q.lora_down.weight -> lora_unet_blocks_11_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_cross_attn_q.lora_up.weight -> lora_unet_blocks_11_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_cross_attn_v.alpha -> lora_unet_blocks_11_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_cross_attn_v.lora_down.weight -> lora_unet_blocks_11_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_cross_attn_v.lora_up.weight -> lora_unet_blocks_11_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_ffn_0.alpha -> lora_unet_blocks_11_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_ffn_0.lora_down.weight -> lora_unet_blocks_11_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_ffn_0.lora_up.weight -> lora_unet_blocks_11_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_11_ffn_2.alpha -> lora_unet_blocks_11_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_ffn_2.lora_down.weight -> lora_unet_blocks_11_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_11_ffn_2.lora_up.weight -> lora_unet_blocks_11_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_self_attn_k.alpha -> lora_unet_blocks_11_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_self_attn_k.lora_down.weight -> lora_unet_blocks_11_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_self_attn_k.lora_up.weight -> lora_unet_blocks_11_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_self_attn_o.alpha -> lora_unet_blocks_11_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_self_attn_o.lora_down.weight -> lora_unet_blocks_11_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_self_attn_o.lora_up.weight -> lora_unet_blocks_11_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_self_attn_q.alpha -> lora_unet_blocks_11_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_self_attn_q.lora_down.weight -> lora_unet_blocks_11_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_self_attn_q.lora_up.weight -> lora_unet_blocks_11_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_11_self_attn_v.alpha -> lora_unet_blocks_11_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_11_self_attn_v.lora_down.weight -> lora_unet_blocks_11_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_11_self_attn_v.lora_up.weight -> lora_unet_blocks_11_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_cross_attn_k.alpha -> lora_unet_blocks_12_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_cross_attn_k.lora_down.weight -> lora_unet_blocks_12_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_cross_attn_k.lora_up.weight -> lora_unet_blocks_12_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_cross_attn_o.alpha -> lora_unet_blocks_12_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_cross_attn_o.lora_down.weight -> lora_unet_blocks_12_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_cross_attn_o.lora_up.weight -> lora_unet_blocks_12_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_cross_attn_q.alpha -> lora_unet_blocks_12_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_cross_attn_q.lora_down.weight -> lora_unet_blocks_12_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_cross_attn_q.lora_up.weight -> lora_unet_blocks_12_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_cross_attn_v.alpha -> lora_unet_blocks_12_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_cross_attn_v.lora_down.weight -> lora_unet_blocks_12_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_cross_attn_v.lora_up.weight -> lora_unet_blocks_12_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_ffn_0.alpha -> lora_unet_blocks_12_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_ffn_0.lora_down.weight -> lora_unet_blocks_12_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_ffn_0.lora_up.weight -> lora_unet_blocks_12_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_12_ffn_2.alpha -> lora_unet_blocks_12_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_ffn_2.lora_down.weight -> lora_unet_blocks_12_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_12_ffn_2.lora_up.weight -> lora_unet_blocks_12_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_self_attn_k.alpha -> lora_unet_blocks_12_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_self_attn_k.lora_down.weight -> lora_unet_blocks_12_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_self_attn_k.lora_up.weight -> lora_unet_blocks_12_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_self_attn_o.alpha -> lora_unet_blocks_12_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_self_attn_o.lora_down.weight -> lora_unet_blocks_12_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_self_attn_o.lora_up.weight -> lora_unet_blocks_12_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_self_attn_q.alpha -> lora_unet_blocks_12_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_self_attn_q.lora_down.weight -> lora_unet_blocks_12_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_self_attn_q.lora_up.weight -> lora_unet_blocks_12_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_12_self_attn_v.alpha -> lora_unet_blocks_12_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_12_self_attn_v.lora_down.weight -> lora_unet_blocks_12_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_12_self_attn_v.lora_up.weight -> lora_unet_blocks_12_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_cross_attn_k.alpha -> lora_unet_blocks_13_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_cross_attn_k.lora_down.weight -> lora_unet_blocks_13_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_cross_attn_k.lora_up.weight -> lora_unet_blocks_13_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_cross_attn_o.alpha -> lora_unet_blocks_13_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_cross_attn_o.lora_down.weight -> lora_unet_blocks_13_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_cross_attn_o.lora_up.weight -> lora_unet_blocks_13_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_cross_attn_q.alpha -> lora_unet_blocks_13_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_cross_attn_q.lora_down.weight -> lora_unet_blocks_13_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_cross_attn_q.lora_up.weight -> lora_unet_blocks_13_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_cross_attn_v.alpha -> lora_unet_blocks_13_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_cross_attn_v.lora_down.weight -> lora_unet_blocks_13_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_cross_attn_v.lora_up.weight -> lora_unet_blocks_13_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_ffn_0.alpha -> lora_unet_blocks_13_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_ffn_0.lora_down.weight -> lora_unet_blocks_13_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_ffn_0.lora_up.weight -> lora_unet_blocks_13_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_13_ffn_2.alpha -> lora_unet_blocks_13_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_ffn_2.lora_down.weight -> lora_unet_blocks_13_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_13_ffn_2.lora_up.weight -> lora_unet_blocks_13_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_self_attn_k.alpha -> lora_unet_blocks_13_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_self_attn_k.lora_down.weight -> lora_unet_blocks_13_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_self_attn_k.lora_up.weight -> lora_unet_blocks_13_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_self_attn_o.alpha -> lora_unet_blocks_13_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_self_attn_o.lora_down.weight -> lora_unet_blocks_13_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_self_attn_o.lora_up.weight -> lora_unet_blocks_13_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_self_attn_q.alpha -> lora_unet_blocks_13_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_self_attn_q.lora_down.weight -> lora_unet_blocks_13_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_self_attn_q.lora_up.weight -> lora_unet_blocks_13_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_13_self_attn_v.alpha -> lora_unet_blocks_13_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_13_self_attn_v.lora_down.weight -> lora_unet_blocks_13_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_13_self_attn_v.lora_up.weight -> lora_unet_blocks_13_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_cross_attn_k.alpha -> lora_unet_blocks_14_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_cross_attn_k.lora_down.weight -> lora_unet_blocks_14_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_cross_attn_k.lora_up.weight -> lora_unet_blocks_14_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_cross_attn_o.alpha -> lora_unet_blocks_14_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_cross_attn_o.lora_down.weight -> lora_unet_blocks_14_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_cross_attn_o.lora_up.weight -> lora_unet_blocks_14_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_cross_attn_q.alpha -> lora_unet_blocks_14_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_cross_attn_q.lora_down.weight -> lora_unet_blocks_14_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_cross_attn_q.lora_up.weight -> lora_unet_blocks_14_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_cross_attn_v.alpha -> lora_unet_blocks_14_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_cross_attn_v.lora_down.weight -> lora_unet_blocks_14_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_cross_attn_v.lora_up.weight -> lora_unet_blocks_14_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_ffn_0.alpha -> lora_unet_blocks_14_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_ffn_0.lora_down.weight -> lora_unet_blocks_14_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_ffn_0.lora_up.weight -> lora_unet_blocks_14_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_14_ffn_2.alpha -> lora_unet_blocks_14_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_ffn_2.lora_down.weight -> lora_unet_blocks_14_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_14_ffn_2.lora_up.weight -> lora_unet_blocks_14_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_self_attn_k.alpha -> lora_unet_blocks_14_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_self_attn_k.lora_down.weight -> lora_unet_blocks_14_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_self_attn_k.lora_up.weight -> lora_unet_blocks_14_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_self_attn_o.alpha -> lora_unet_blocks_14_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_self_attn_o.lora_down.weight -> lora_unet_blocks_14_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_self_attn_o.lora_up.weight -> lora_unet_blocks_14_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_self_attn_q.alpha -> lora_unet_blocks_14_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_self_attn_q.lora_down.weight -> lora_unet_blocks_14_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_self_attn_q.lora_up.weight -> lora_unet_blocks_14_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_14_self_attn_v.alpha -> lora_unet_blocks_14_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_14_self_attn_v.lora_down.weight -> lora_unet_blocks_14_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_14_self_attn_v.lora_up.weight -> lora_unet_blocks_14_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_cross_attn_k.alpha -> lora_unet_blocks_15_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_cross_attn_k.lora_down.weight -> lora_unet_blocks_15_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_cross_attn_k.lora_up.weight -> lora_unet_blocks_15_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_cross_attn_o.alpha -> lora_unet_blocks_15_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_cross_attn_o.lora_down.weight -> lora_unet_blocks_15_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_cross_attn_o.lora_up.weight -> lora_unet_blocks_15_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_cross_attn_q.alpha -> lora_unet_blocks_15_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_cross_attn_q.lora_down.weight -> lora_unet_blocks_15_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_cross_attn_q.lora_up.weight -> lora_unet_blocks_15_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_cross_attn_v.alpha -> lora_unet_blocks_15_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_cross_attn_v.lora_down.weight -> lora_unet_blocks_15_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_cross_attn_v.lora_up.weight -> lora_unet_blocks_15_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_ffn_0.alpha -> lora_unet_blocks_15_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_ffn_0.lora_down.weight -> lora_unet_blocks_15_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_ffn_0.lora_up.weight -> lora_unet_blocks_15_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_15_ffn_2.alpha -> lora_unet_blocks_15_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_ffn_2.lora_down.weight -> lora_unet_blocks_15_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_15_ffn_2.lora_up.weight -> lora_unet_blocks_15_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_self_attn_k.alpha -> lora_unet_blocks_15_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_self_attn_k.lora_down.weight -> lora_unet_blocks_15_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_self_attn_k.lora_up.weight -> lora_unet_blocks_15_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_self_attn_o.alpha -> lora_unet_blocks_15_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_self_attn_o.lora_down.weight -> lora_unet_blocks_15_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_self_attn_o.lora_up.weight -> lora_unet_blocks_15_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_self_attn_q.alpha -> lora_unet_blocks_15_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_self_attn_q.lora_down.weight -> lora_unet_blocks_15_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_self_attn_q.lora_up.weight -> lora_unet_blocks_15_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_15_self_attn_v.alpha -> lora_unet_blocks_15_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_15_self_attn_v.lora_down.weight -> lora_unet_blocks_15_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_15_self_attn_v.lora_up.weight -> lora_unet_blocks_15_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_cross_attn_k.alpha -> lora_unet_blocks_16_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_cross_attn_k.lora_down.weight -> lora_unet_blocks_16_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_cross_attn_k.lora_up.weight -> lora_unet_blocks_16_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_cross_attn_o.alpha -> lora_unet_blocks_16_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_cross_attn_o.lora_down.weight -> lora_unet_blocks_16_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_cross_attn_o.lora_up.weight -> lora_unet_blocks_16_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_cross_attn_q.alpha -> lora_unet_blocks_16_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_cross_attn_q.lora_down.weight -> lora_unet_blocks_16_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_cross_attn_q.lora_up.weight -> lora_unet_blocks_16_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_cross_attn_v.alpha -> lora_unet_blocks_16_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_cross_attn_v.lora_down.weight -> lora_unet_blocks_16_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_cross_attn_v.lora_up.weight -> lora_unet_blocks_16_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_ffn_0.alpha -> lora_unet_blocks_16_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_ffn_0.lora_down.weight -> lora_unet_blocks_16_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_ffn_0.lora_up.weight -> lora_unet_blocks_16_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_16_ffn_2.alpha -> lora_unet_blocks_16_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_ffn_2.lora_down.weight -> lora_unet_blocks_16_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_16_ffn_2.lora_up.weight -> lora_unet_blocks_16_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_self_attn_k.alpha -> lora_unet_blocks_16_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_self_attn_k.lora_down.weight -> lora_unet_blocks_16_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_self_attn_k.lora_up.weight -> lora_unet_blocks_16_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_self_attn_o.alpha -> lora_unet_blocks_16_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_self_attn_o.lora_down.weight -> lora_unet_blocks_16_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_self_attn_o.lora_up.weight -> lora_unet_blocks_16_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_self_attn_q.alpha -> lora_unet_blocks_16_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_self_attn_q.lora_down.weight -> lora_unet_blocks_16_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_self_attn_q.lora_up.weight -> lora_unet_blocks_16_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_16_self_attn_v.alpha -> lora_unet_blocks_16_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_16_self_attn_v.lora_down.weight -> lora_unet_blocks_16_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_16_self_attn_v.lora_up.weight -> lora_unet_blocks_16_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_cross_attn_k.alpha -> lora_unet_blocks_17_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_cross_attn_k.lora_down.weight -> lora_unet_blocks_17_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_cross_attn_k.lora_up.weight -> lora_unet_blocks_17_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_cross_attn_o.alpha -> lora_unet_blocks_17_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_cross_attn_o.lora_down.weight -> lora_unet_blocks_17_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_cross_attn_o.lora_up.weight -> lora_unet_blocks_17_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_cross_attn_q.alpha -> lora_unet_blocks_17_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_cross_attn_q.lora_down.weight -> lora_unet_blocks_17_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_cross_attn_q.lora_up.weight -> lora_unet_blocks_17_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_cross_attn_v.alpha -> lora_unet_blocks_17_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_cross_attn_v.lora_down.weight -> lora_unet_blocks_17_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_cross_attn_v.lora_up.weight -> lora_unet_blocks_17_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_ffn_0.alpha -> lora_unet_blocks_17_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_ffn_0.lora_down.weight -> lora_unet_blocks_17_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_ffn_0.lora_up.weight -> lora_unet_blocks_17_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_17_ffn_2.alpha -> lora_unet_blocks_17_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_ffn_2.lora_down.weight -> lora_unet_blocks_17_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_17_ffn_2.lora_up.weight -> lora_unet_blocks_17_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_self_attn_k.alpha -> lora_unet_blocks_17_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_self_attn_k.lora_down.weight -> lora_unet_blocks_17_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_self_attn_k.lora_up.weight -> lora_unet_blocks_17_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_self_attn_o.alpha -> lora_unet_blocks_17_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_self_attn_o.lora_down.weight -> lora_unet_blocks_17_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_self_attn_o.lora_up.weight -> lora_unet_blocks_17_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_self_attn_q.alpha -> lora_unet_blocks_17_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_self_attn_q.lora_down.weight -> lora_unet_blocks_17_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_self_attn_q.lora_up.weight -> lora_unet_blocks_17_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_17_self_attn_v.alpha -> lora_unet_blocks_17_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_17_self_attn_v.lora_down.weight -> lora_unet_blocks_17_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_17_self_attn_v.lora_up.weight -> lora_unet_blocks_17_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_cross_attn_k.alpha -> lora_unet_blocks_18_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_cross_attn_k.lora_down.weight -> lora_unet_blocks_18_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_cross_attn_k.lora_up.weight -> lora_unet_blocks_18_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_cross_attn_o.alpha -> lora_unet_blocks_18_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_cross_attn_o.lora_down.weight -> lora_unet_blocks_18_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_cross_attn_o.lora_up.weight -> lora_unet_blocks_18_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_cross_attn_q.alpha -> lora_unet_blocks_18_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_cross_attn_q.lora_down.weight -> lora_unet_blocks_18_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_cross_attn_q.lora_up.weight -> lora_unet_blocks_18_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_cross_attn_v.alpha -> lora_unet_blocks_18_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_cross_attn_v.lora_down.weight -> lora_unet_blocks_18_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_cross_attn_v.lora_up.weight -> lora_unet_blocks_18_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_ffn_0.alpha -> lora_unet_blocks_18_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_ffn_0.lora_down.weight -> lora_unet_blocks_18_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_ffn_0.lora_up.weight -> lora_unet_blocks_18_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_18_ffn_2.alpha -> lora_unet_blocks_18_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_ffn_2.lora_down.weight -> lora_unet_blocks_18_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_18_ffn_2.lora_up.weight -> lora_unet_blocks_18_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_self_attn_k.alpha -> lora_unet_blocks_18_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_self_attn_k.lora_down.weight -> lora_unet_blocks_18_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_self_attn_k.lora_up.weight -> lora_unet_blocks_18_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_self_attn_o.alpha -> lora_unet_blocks_18_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_self_attn_o.lora_down.weight -> lora_unet_blocks_18_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_self_attn_o.lora_up.weight -> lora_unet_blocks_18_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_self_attn_q.alpha -> lora_unet_blocks_18_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_self_attn_q.lora_down.weight -> lora_unet_blocks_18_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_self_attn_q.lora_up.weight -> lora_unet_blocks_18_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_18_self_attn_v.alpha -> lora_unet_blocks_18_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_18_self_attn_v.lora_down.weight -> lora_unet_blocks_18_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_18_self_attn_v.lora_up.weight -> lora_unet_blocks_18_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_cross_attn_k.alpha -> lora_unet_blocks_19_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_cross_attn_k.lora_down.weight -> lora_unet_blocks_19_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_cross_attn_k.lora_up.weight -> lora_unet_blocks_19_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_cross_attn_o.alpha -> lora_unet_blocks_19_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_cross_attn_o.lora_down.weight -> lora_unet_blocks_19_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_cross_attn_o.lora_up.weight -> lora_unet_blocks_19_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_cross_attn_q.alpha -> lora_unet_blocks_19_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_cross_attn_q.lora_down.weight -> lora_unet_blocks_19_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_cross_attn_q.lora_up.weight -> lora_unet_blocks_19_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_cross_attn_v.alpha -> lora_unet_blocks_19_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_cross_attn_v.lora_down.weight -> lora_unet_blocks_19_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_cross_attn_v.lora_up.weight -> lora_unet_blocks_19_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_ffn_0.alpha -> lora_unet_blocks_19_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_ffn_0.lora_down.weight -> lora_unet_blocks_19_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_ffn_0.lora_up.weight -> lora_unet_blocks_19_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_19_ffn_2.alpha -> lora_unet_blocks_19_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_ffn_2.lora_down.weight -> lora_unet_blocks_19_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_19_ffn_2.lora_up.weight -> lora_unet_blocks_19_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_self_attn_k.alpha -> lora_unet_blocks_19_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_self_attn_k.lora_down.weight -> lora_unet_blocks_19_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_self_attn_k.lora_up.weight -> lora_unet_blocks_19_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_self_attn_o.alpha -> lora_unet_blocks_19_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_self_attn_o.lora_down.weight -> lora_unet_blocks_19_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_self_attn_o.lora_up.weight -> lora_unet_blocks_19_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_self_attn_q.alpha -> lora_unet_blocks_19_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_self_attn_q.lora_down.weight -> lora_unet_blocks_19_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_self_attn_q.lora_up.weight -> lora_unet_blocks_19_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_19_self_attn_v.alpha -> lora_unet_blocks_19_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_19_self_attn_v.lora_down.weight -> lora_unet_blocks_19_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_19_self_attn_v.lora_up.weight -> lora_unet_blocks_19_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_cross_attn_k.alpha -> lora_unet_blocks_1_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_cross_attn_k.lora_down.weight -> lora_unet_blocks_1_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_cross_attn_k.lora_up.weight -> lora_unet_blocks_1_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_cross_attn_o.alpha -> lora_unet_blocks_1_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_cross_attn_o.lora_down.weight -> lora_unet_blocks_1_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_cross_attn_o.lora_up.weight -> lora_unet_blocks_1_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_cross_attn_q.alpha -> lora_unet_blocks_1_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_cross_attn_q.lora_down.weight -> lora_unet_blocks_1_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_cross_attn_q.lora_up.weight -> lora_unet_blocks_1_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_cross_attn_v.alpha -> lora_unet_blocks_1_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_cross_attn_v.lora_down.weight -> lora_unet_blocks_1_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_cross_attn_v.lora_up.weight -> lora_unet_blocks_1_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_ffn_0.alpha -> lora_unet_blocks_1_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_ffn_0.lora_down.weight -> lora_unet_blocks_1_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_ffn_0.lora_up.weight -> lora_unet_blocks_1_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_1_ffn_2.alpha -> lora_unet_blocks_1_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_ffn_2.lora_down.weight -> lora_unet_blocks_1_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_1_ffn_2.lora_up.weight -> lora_unet_blocks_1_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_self_attn_k.alpha -> lora_unet_blocks_1_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_self_attn_k.lora_down.weight -> lora_unet_blocks_1_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_self_attn_k.lora_up.weight -> lora_unet_blocks_1_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_self_attn_o.alpha -> lora_unet_blocks_1_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_self_attn_o.lora_down.weight -> lora_unet_blocks_1_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_self_attn_o.lora_up.weight -> lora_unet_blocks_1_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_self_attn_q.alpha -> lora_unet_blocks_1_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_self_attn_q.lora_down.weight -> lora_unet_blocks_1_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_self_attn_q.lora_up.weight -> lora_unet_blocks_1_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_1_self_attn_v.alpha -> lora_unet_blocks_1_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_1_self_attn_v.lora_down.weight -> lora_unet_blocks_1_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_1_self_attn_v.lora_up.weight -> lora_unet_blocks_1_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_cross_attn_k.alpha -> lora_unet_blocks_20_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_cross_attn_k.lora_down.weight -> lora_unet_blocks_20_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_cross_attn_k.lora_up.weight -> lora_unet_blocks_20_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_cross_attn_o.alpha -> lora_unet_blocks_20_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_cross_attn_o.lora_down.weight -> lora_unet_blocks_20_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_cross_attn_o.lora_up.weight -> lora_unet_blocks_20_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_cross_attn_q.alpha -> lora_unet_blocks_20_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_cross_attn_q.lora_down.weight -> lora_unet_blocks_20_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_cross_attn_q.lora_up.weight -> lora_unet_blocks_20_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_cross_attn_v.alpha -> lora_unet_blocks_20_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_cross_attn_v.lora_down.weight -> lora_unet_blocks_20_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_cross_attn_v.lora_up.weight -> lora_unet_blocks_20_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_ffn_0.alpha -> lora_unet_blocks_20_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_ffn_0.lora_down.weight -> lora_unet_blocks_20_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_ffn_0.lora_up.weight -> lora_unet_blocks_20_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_20_ffn_2.alpha -> lora_unet_blocks_20_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_ffn_2.lora_down.weight -> lora_unet_blocks_20_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_20_ffn_2.lora_up.weight -> lora_unet_blocks_20_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_self_attn_k.alpha -> lora_unet_blocks_20_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_self_attn_k.lora_down.weight -> lora_unet_blocks_20_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_self_attn_k.lora_up.weight -> lora_unet_blocks_20_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_self_attn_o.alpha -> lora_unet_blocks_20_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_self_attn_o.lora_down.weight -> lora_unet_blocks_20_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_self_attn_o.lora_up.weight -> lora_unet_blocks_20_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_self_attn_q.alpha -> lora_unet_blocks_20_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_self_attn_q.lora_down.weight -> lora_unet_blocks_20_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_self_attn_q.lora_up.weight -> lora_unet_blocks_20_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_20_self_attn_v.alpha -> lora_unet_blocks_20_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_20_self_attn_v.lora_down.weight -> lora_unet_blocks_20_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_20_self_attn_v.lora_up.weight -> lora_unet_blocks_20_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_cross_attn_k.alpha -> lora_unet_blocks_21_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_cross_attn_k.lora_down.weight -> lora_unet_blocks_21_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_cross_attn_k.lora_up.weight -> lora_unet_blocks_21_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_cross_attn_o.alpha -> lora_unet_blocks_21_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_cross_attn_o.lora_down.weight -> lora_unet_blocks_21_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_cross_attn_o.lora_up.weight -> lora_unet_blocks_21_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_cross_attn_q.alpha -> lora_unet_blocks_21_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_cross_attn_q.lora_down.weight -> lora_unet_blocks_21_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_cross_attn_q.lora_up.weight -> lora_unet_blocks_21_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_cross_attn_v.alpha -> lora_unet_blocks_21_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_cross_attn_v.lora_down.weight -> lora_unet_blocks_21_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_cross_attn_v.lora_up.weight -> lora_unet_blocks_21_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_ffn_0.alpha -> lora_unet_blocks_21_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_ffn_0.lora_down.weight -> lora_unet_blocks_21_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_ffn_0.lora_up.weight -> lora_unet_blocks_21_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_21_ffn_2.alpha -> lora_unet_blocks_21_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_ffn_2.lora_down.weight -> lora_unet_blocks_21_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_21_ffn_2.lora_up.weight -> lora_unet_blocks_21_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_self_attn_k.alpha -> lora_unet_blocks_21_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_self_attn_k.lora_down.weight -> lora_unet_blocks_21_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_self_attn_k.lora_up.weight -> lora_unet_blocks_21_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_self_attn_o.alpha -> lora_unet_blocks_21_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_self_attn_o.lora_down.weight -> lora_unet_blocks_21_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_self_attn_o.lora_up.weight -> lora_unet_blocks_21_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_self_attn_q.alpha -> lora_unet_blocks_21_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_self_attn_q.lora_down.weight -> lora_unet_blocks_21_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_self_attn_q.lora_up.weight -> lora_unet_blocks_21_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_21_self_attn_v.alpha -> lora_unet_blocks_21_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_21_self_attn_v.lora_down.weight -> lora_unet_blocks_21_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_21_self_attn_v.lora_up.weight -> lora_unet_blocks_21_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_cross_attn_k.alpha -> lora_unet_blocks_22_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_cross_attn_k.lora_down.weight -> lora_unet_blocks_22_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_cross_attn_k.lora_up.weight -> lora_unet_blocks_22_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_cross_attn_o.alpha -> lora_unet_blocks_22_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_cross_attn_o.lora_down.weight -> lora_unet_blocks_22_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_cross_attn_o.lora_up.weight -> lora_unet_blocks_22_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_cross_attn_q.alpha -> lora_unet_blocks_22_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_cross_attn_q.lora_down.weight -> lora_unet_blocks_22_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_cross_attn_q.lora_up.weight -> lora_unet_blocks_22_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_cross_attn_v.alpha -> lora_unet_blocks_22_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_cross_attn_v.lora_down.weight -> lora_unet_blocks_22_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_cross_attn_v.lora_up.weight -> lora_unet_blocks_22_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_ffn_0.alpha -> lora_unet_blocks_22_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_ffn_0.lora_down.weight -> lora_unet_blocks_22_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_ffn_0.lora_up.weight -> lora_unet_blocks_22_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_22_ffn_2.alpha -> lora_unet_blocks_22_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_ffn_2.lora_down.weight -> lora_unet_blocks_22_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_22_ffn_2.lora_up.weight -> lora_unet_blocks_22_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_self_attn_k.alpha -> lora_unet_blocks_22_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_self_attn_k.lora_down.weight -> lora_unet_blocks_22_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_self_attn_k.lora_up.weight -> lora_unet_blocks_22_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_self_attn_o.alpha -> lora_unet_blocks_22_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_self_attn_o.lora_down.weight -> lora_unet_blocks_22_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_self_attn_o.lora_up.weight -> lora_unet_blocks_22_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_self_attn_q.alpha -> lora_unet_blocks_22_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_self_attn_q.lora_down.weight -> lora_unet_blocks_22_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_self_attn_q.lora_up.weight -> lora_unet_blocks_22_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_22_self_attn_v.alpha -> lora_unet_blocks_22_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_22_self_attn_v.lora_down.weight -> lora_unet_blocks_22_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_22_self_attn_v.lora_up.weight -> lora_unet_blocks_22_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_cross_attn_k.alpha -> lora_unet_blocks_23_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_cross_attn_k.lora_down.weight -> lora_unet_blocks_23_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_cross_attn_k.lora_up.weight -> lora_unet_blocks_23_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_cross_attn_o.alpha -> lora_unet_blocks_23_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_cross_attn_o.lora_down.weight -> lora_unet_blocks_23_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_cross_attn_o.lora_up.weight -> lora_unet_blocks_23_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_cross_attn_q.alpha -> lora_unet_blocks_23_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_cross_attn_q.lora_down.weight -> lora_unet_blocks_23_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_cross_attn_q.lora_up.weight -> lora_unet_blocks_23_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_cross_attn_v.alpha -> lora_unet_blocks_23_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_cross_attn_v.lora_down.weight -> lora_unet_blocks_23_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_cross_attn_v.lora_up.weight -> lora_unet_blocks_23_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_ffn_0.alpha -> lora_unet_blocks_23_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_ffn_0.lora_down.weight -> lora_unet_blocks_23_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_ffn_0.lora_up.weight -> lora_unet_blocks_23_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_23_ffn_2.alpha -> lora_unet_blocks_23_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_ffn_2.lora_down.weight -> lora_unet_blocks_23_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_23_ffn_2.lora_up.weight -> lora_unet_blocks_23_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_self_attn_k.alpha -> lora_unet_blocks_23_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_self_attn_k.lora_down.weight -> lora_unet_blocks_23_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_self_attn_k.lora_up.weight -> lora_unet_blocks_23_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_self_attn_o.alpha -> lora_unet_blocks_23_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_self_attn_o.lora_down.weight -> lora_unet_blocks_23_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_self_attn_o.lora_up.weight -> lora_unet_blocks_23_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_self_attn_q.alpha -> lora_unet_blocks_23_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_self_attn_q.lora_down.weight -> lora_unet_blocks_23_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_self_attn_q.lora_up.weight -> lora_unet_blocks_23_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_23_self_attn_v.alpha -> lora_unet_blocks_23_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_23_self_attn_v.lora_down.weight -> lora_unet_blocks_23_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_23_self_attn_v.lora_up.weight -> lora_unet_blocks_23_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_cross_attn_k.alpha -> lora_unet_blocks_24_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_cross_attn_k.lora_down.weight -> lora_unet_blocks_24_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_cross_attn_k.lora_up.weight -> lora_unet_blocks_24_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_cross_attn_o.alpha -> lora_unet_blocks_24_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_cross_attn_o.lora_down.weight -> lora_unet_blocks_24_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_cross_attn_o.lora_up.weight -> lora_unet_blocks_24_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_cross_attn_q.alpha -> lora_unet_blocks_24_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_cross_attn_q.lora_down.weight -> lora_unet_blocks_24_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_cross_attn_q.lora_up.weight -> lora_unet_blocks_24_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_cross_attn_v.alpha -> lora_unet_blocks_24_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_cross_attn_v.lora_down.weight -> lora_unet_blocks_24_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_cross_attn_v.lora_up.weight -> lora_unet_blocks_24_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_ffn_0.alpha -> lora_unet_blocks_24_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_ffn_0.lora_down.weight -> lora_unet_blocks_24_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_ffn_0.lora_up.weight -> lora_unet_blocks_24_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_24_ffn_2.alpha -> lora_unet_blocks_24_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_ffn_2.lora_down.weight -> lora_unet_blocks_24_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_24_ffn_2.lora_up.weight -> lora_unet_blocks_24_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_self_attn_k.alpha -> lora_unet_blocks_24_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_self_attn_k.lora_down.weight -> lora_unet_blocks_24_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_self_attn_k.lora_up.weight -> lora_unet_blocks_24_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_self_attn_o.alpha -> lora_unet_blocks_24_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_self_attn_o.lora_down.weight -> lora_unet_blocks_24_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_self_attn_o.lora_up.weight -> lora_unet_blocks_24_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_self_attn_q.alpha -> lora_unet_blocks_24_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_self_attn_q.lora_down.weight -> lora_unet_blocks_24_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_self_attn_q.lora_up.weight -> lora_unet_blocks_24_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_24_self_attn_v.alpha -> lora_unet_blocks_24_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_24_self_attn_v.lora_down.weight -> lora_unet_blocks_24_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_24_self_attn_v.lora_up.weight -> lora_unet_blocks_24_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_cross_attn_k.alpha -> lora_unet_blocks_25_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_cross_attn_k.lora_down.weight -> lora_unet_blocks_25_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_cross_attn_k.lora_up.weight -> lora_unet_blocks_25_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_cross_attn_o.alpha -> lora_unet_blocks_25_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_cross_attn_o.lora_down.weight -> lora_unet_blocks_25_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_cross_attn_o.lora_up.weight -> lora_unet_blocks_25_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_cross_attn_q.alpha -> lora_unet_blocks_25_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_cross_attn_q.lora_down.weight -> lora_unet_blocks_25_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_cross_attn_q.lora_up.weight -> lora_unet_blocks_25_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_cross_attn_v.alpha -> lora_unet_blocks_25_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_cross_attn_v.lora_down.weight -> lora_unet_blocks_25_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_cross_attn_v.lora_up.weight -> lora_unet_blocks_25_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_ffn_0.alpha -> lora_unet_blocks_25_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_ffn_0.lora_down.weight -> lora_unet_blocks_25_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_ffn_0.lora_up.weight -> lora_unet_blocks_25_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_25_ffn_2.alpha -> lora_unet_blocks_25_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_ffn_2.lora_down.weight -> lora_unet_blocks_25_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_25_ffn_2.lora_up.weight -> lora_unet_blocks_25_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_self_attn_k.alpha -> lora_unet_blocks_25_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_self_attn_k.lora_down.weight -> lora_unet_blocks_25_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_self_attn_k.lora_up.weight -> lora_unet_blocks_25_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_self_attn_o.alpha -> lora_unet_blocks_25_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_self_attn_o.lora_down.weight -> lora_unet_blocks_25_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_self_attn_o.lora_up.weight -> lora_unet_blocks_25_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_self_attn_q.alpha -> lora_unet_blocks_25_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_self_attn_q.lora_down.weight -> lora_unet_blocks_25_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_self_attn_q.lora_up.weight -> lora_unet_blocks_25_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_25_self_attn_v.alpha -> lora_unet_blocks_25_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_25_self_attn_v.lora_down.weight -> lora_unet_blocks_25_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_25_self_attn_v.lora_up.weight -> lora_unet_blocks_25_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_cross_attn_k.alpha -> lora_unet_blocks_26_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_cross_attn_k.lora_down.weight -> lora_unet_blocks_26_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_cross_attn_k.lora_up.weight -> lora_unet_blocks_26_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_cross_attn_o.alpha -> lora_unet_blocks_26_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_cross_attn_o.lora_down.weight -> lora_unet_blocks_26_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_cross_attn_o.lora_up.weight -> lora_unet_blocks_26_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_cross_attn_q.alpha -> lora_unet_blocks_26_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_cross_attn_q.lora_down.weight -> lora_unet_blocks_26_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_cross_attn_q.lora_up.weight -> lora_unet_blocks_26_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_cross_attn_v.alpha -> lora_unet_blocks_26_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_cross_attn_v.lora_down.weight -> lora_unet_blocks_26_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_cross_attn_v.lora_up.weight -> lora_unet_blocks_26_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_ffn_0.alpha -> lora_unet_blocks_26_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_ffn_0.lora_down.weight -> lora_unet_blocks_26_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_ffn_0.lora_up.weight -> lora_unet_blocks_26_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_26_ffn_2.alpha -> lora_unet_blocks_26_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_ffn_2.lora_down.weight -> lora_unet_blocks_26_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_26_ffn_2.lora_up.weight -> lora_unet_blocks_26_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_self_attn_k.alpha -> lora_unet_blocks_26_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_self_attn_k.lora_down.weight -> lora_unet_blocks_26_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_self_attn_k.lora_up.weight -> lora_unet_blocks_26_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_self_attn_o.alpha -> lora_unet_blocks_26_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_self_attn_o.lora_down.weight -> lora_unet_blocks_26_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_self_attn_o.lora_up.weight -> lora_unet_blocks_26_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_self_attn_q.alpha -> lora_unet_blocks_26_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_self_attn_q.lora_down.weight -> lora_unet_blocks_26_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_self_attn_q.lora_up.weight -> lora_unet_blocks_26_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_26_self_attn_v.alpha -> lora_unet_blocks_26_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_26_self_attn_v.lora_down.weight -> lora_unet_blocks_26_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_26_self_attn_v.lora_up.weight -> lora_unet_blocks_26_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_cross_attn_k.alpha -> lora_unet_blocks_27_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_cross_attn_k.lora_down.weight -> lora_unet_blocks_27_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_cross_attn_k.lora_up.weight -> lora_unet_blocks_27_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_cross_attn_o.alpha -> lora_unet_blocks_27_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_cross_attn_o.lora_down.weight -> lora_unet_blocks_27_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_cross_attn_o.lora_up.weight -> lora_unet_blocks_27_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_cross_attn_q.alpha -> lora_unet_blocks_27_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_cross_attn_q.lora_down.weight -> lora_unet_blocks_27_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_cross_attn_q.lora_up.weight -> lora_unet_blocks_27_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_cross_attn_v.alpha -> lora_unet_blocks_27_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_cross_attn_v.lora_down.weight -> lora_unet_blocks_27_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_cross_attn_v.lora_up.weight -> lora_unet_blocks_27_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_ffn_0.alpha -> lora_unet_blocks_27_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_ffn_0.lora_down.weight -> lora_unet_blocks_27_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_ffn_0.lora_up.weight -> lora_unet_blocks_27_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_27_ffn_2.alpha -> lora_unet_blocks_27_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_ffn_2.lora_down.weight -> lora_unet_blocks_27_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_27_ffn_2.lora_up.weight -> lora_unet_blocks_27_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_self_attn_k.alpha -> lora_unet_blocks_27_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_self_attn_k.lora_down.weight -> lora_unet_blocks_27_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_self_attn_k.lora_up.weight -> lora_unet_blocks_27_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_self_attn_o.alpha -> lora_unet_blocks_27_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_self_attn_o.lora_down.weight -> lora_unet_blocks_27_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_self_attn_o.lora_up.weight -> lora_unet_blocks_27_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_self_attn_q.alpha -> lora_unet_blocks_27_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_self_attn_q.lora_down.weight -> lora_unet_blocks_27_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_self_attn_q.lora_up.weight -> lora_unet_blocks_27_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_27_self_attn_v.alpha -> lora_unet_blocks_27_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_27_self_attn_v.lora_down.weight -> lora_unet_blocks_27_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_27_self_attn_v.lora_up.weight -> lora_unet_blocks_27_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_cross_attn_k.alpha -> lora_unet_blocks_28_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_cross_attn_k.lora_down.weight -> lora_unet_blocks_28_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_cross_attn_k.lora_up.weight -> lora_unet_blocks_28_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_cross_attn_o.alpha -> lora_unet_blocks_28_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_cross_attn_o.lora_down.weight -> lora_unet_blocks_28_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_cross_attn_o.lora_up.weight -> lora_unet_blocks_28_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_cross_attn_q.alpha -> lora_unet_blocks_28_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_cross_attn_q.lora_down.weight -> lora_unet_blocks_28_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_cross_attn_q.lora_up.weight -> lora_unet_blocks_28_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_cross_attn_v.alpha -> lora_unet_blocks_28_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_cross_attn_v.lora_down.weight -> lora_unet_blocks_28_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_cross_attn_v.lora_up.weight -> lora_unet_blocks_28_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_ffn_0.alpha -> lora_unet_blocks_28_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_ffn_0.lora_down.weight -> lora_unet_blocks_28_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_ffn_0.lora_up.weight -> lora_unet_blocks_28_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_28_ffn_2.alpha -> lora_unet_blocks_28_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_ffn_2.lora_down.weight -> lora_unet_blocks_28_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_28_ffn_2.lora_up.weight -> lora_unet_blocks_28_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_self_attn_k.alpha -> lora_unet_blocks_28_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_self_attn_k.lora_down.weight -> lora_unet_blocks_28_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_self_attn_k.lora_up.weight -> lora_unet_blocks_28_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_self_attn_o.alpha -> lora_unet_blocks_28_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_self_attn_o.lora_down.weight -> lora_unet_blocks_28_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_self_attn_o.lora_up.weight -> lora_unet_blocks_28_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_self_attn_q.alpha -> lora_unet_blocks_28_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_self_attn_q.lora_down.weight -> lora_unet_blocks_28_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_self_attn_q.lora_up.weight -> lora_unet_blocks_28_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_28_self_attn_v.alpha -> lora_unet_blocks_28_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_28_self_attn_v.lora_down.weight -> lora_unet_blocks_28_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_28_self_attn_v.lora_up.weight -> lora_unet_blocks_28_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_cross_attn_k.alpha -> lora_unet_blocks_29_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_cross_attn_k.lora_down.weight -> lora_unet_blocks_29_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_cross_attn_k.lora_up.weight -> lora_unet_blocks_29_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_cross_attn_o.alpha -> lora_unet_blocks_29_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_cross_attn_o.lora_down.weight -> lora_unet_blocks_29_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_cross_attn_o.lora_up.weight -> lora_unet_blocks_29_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_cross_attn_q.alpha -> lora_unet_blocks_29_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_cross_attn_q.lora_down.weight -> lora_unet_blocks_29_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_cross_attn_q.lora_up.weight -> lora_unet_blocks_29_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_cross_attn_v.alpha -> lora_unet_blocks_29_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_cross_attn_v.lora_down.weight -> lora_unet_blocks_29_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_cross_attn_v.lora_up.weight -> lora_unet_blocks_29_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_ffn_0.alpha -> lora_unet_blocks_29_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_ffn_0.lora_down.weight -> lora_unet_blocks_29_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_ffn_0.lora_up.weight -> lora_unet_blocks_29_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_29_ffn_2.alpha -> lora_unet_blocks_29_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_ffn_2.lora_down.weight -> lora_unet_blocks_29_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_29_ffn_2.lora_up.weight -> lora_unet_blocks_29_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_self_attn_k.alpha -> lora_unet_blocks_29_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_self_attn_k.lora_down.weight -> lora_unet_blocks_29_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_self_attn_k.lora_up.weight -> lora_unet_blocks_29_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_self_attn_o.alpha -> lora_unet_blocks_29_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_self_attn_o.lora_down.weight -> lora_unet_blocks_29_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_self_attn_o.lora_up.weight -> lora_unet_blocks_29_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_self_attn_q.alpha -> lora_unet_blocks_29_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_self_attn_q.lora_down.weight -> lora_unet_blocks_29_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_self_attn_q.lora_up.weight -> lora_unet_blocks_29_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_29_self_attn_v.alpha -> lora_unet_blocks_29_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_29_self_attn_v.lora_down.weight -> lora_unet_blocks_29_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_29_self_attn_v.lora_up.weight -> lora_unet_blocks_29_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_cross_attn_k.alpha -> lora_unet_blocks_2_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_cross_attn_k.lora_down.weight -> lora_unet_blocks_2_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_cross_attn_k.lora_up.weight -> lora_unet_blocks_2_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_cross_attn_o.alpha -> lora_unet_blocks_2_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_cross_attn_o.lora_down.weight -> lora_unet_blocks_2_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_cross_attn_o.lora_up.weight -> lora_unet_blocks_2_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_cross_attn_q.alpha -> lora_unet_blocks_2_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_cross_attn_q.lora_down.weight -> lora_unet_blocks_2_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_cross_attn_q.lora_up.weight -> lora_unet_blocks_2_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_cross_attn_v.alpha -> lora_unet_blocks_2_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_cross_attn_v.lora_down.weight -> lora_unet_blocks_2_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_cross_attn_v.lora_up.weight -> lora_unet_blocks_2_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_ffn_0.alpha -> lora_unet_blocks_2_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_ffn_0.lora_down.weight -> lora_unet_blocks_2_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_ffn_0.lora_up.weight -> lora_unet_blocks_2_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_2_ffn_2.alpha -> lora_unet_blocks_2_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_ffn_2.lora_down.weight -> lora_unet_blocks_2_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_2_ffn_2.lora_up.weight -> lora_unet_blocks_2_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_self_attn_k.alpha -> lora_unet_blocks_2_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_self_attn_k.lora_down.weight -> lora_unet_blocks_2_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_self_attn_k.lora_up.weight -> lora_unet_blocks_2_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_self_attn_o.alpha -> lora_unet_blocks_2_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_self_attn_o.lora_down.weight -> lora_unet_blocks_2_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_self_attn_o.lora_up.weight -> lora_unet_blocks_2_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_self_attn_q.alpha -> lora_unet_blocks_2_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_self_attn_q.lora_down.weight -> lora_unet_blocks_2_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_self_attn_q.lora_up.weight -> lora_unet_blocks_2_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_2_self_attn_v.alpha -> lora_unet_blocks_2_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_2_self_attn_v.lora_down.weight -> lora_unet_blocks_2_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_2_self_attn_v.lora_up.weight -> lora_unet_blocks_2_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_cross_attn_k.alpha -> lora_unet_blocks_3_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_cross_attn_k.lora_down.weight -> lora_unet_blocks_3_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_cross_attn_k.lora_up.weight -> lora_unet_blocks_3_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_cross_attn_o.alpha -> lora_unet_blocks_3_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_cross_attn_o.lora_down.weight -> lora_unet_blocks_3_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_cross_attn_o.lora_up.weight -> lora_unet_blocks_3_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_cross_attn_q.alpha -> lora_unet_blocks_3_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_cross_attn_q.lora_down.weight -> lora_unet_blocks_3_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_cross_attn_q.lora_up.weight -> lora_unet_blocks_3_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_cross_attn_v.alpha -> lora_unet_blocks_3_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_cross_attn_v.lora_down.weight -> lora_unet_blocks_3_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_cross_attn_v.lora_up.weight -> lora_unet_blocks_3_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_ffn_0.alpha -> lora_unet_blocks_3_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_ffn_0.lora_down.weight -> lora_unet_blocks_3_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_ffn_0.lora_up.weight -> lora_unet_blocks_3_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_3_ffn_2.alpha -> lora_unet_blocks_3_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_ffn_2.lora_down.weight -> lora_unet_blocks_3_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_3_ffn_2.lora_up.weight -> lora_unet_blocks_3_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_self_attn_k.alpha -> lora_unet_blocks_3_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_self_attn_k.lora_down.weight -> lora_unet_blocks_3_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_self_attn_k.lora_up.weight -> lora_unet_blocks_3_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_self_attn_o.alpha -> lora_unet_blocks_3_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_self_attn_o.lora_down.weight -> lora_unet_blocks_3_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_self_attn_o.lora_up.weight -> lora_unet_blocks_3_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_self_attn_q.alpha -> lora_unet_blocks_3_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_self_attn_q.lora_down.weight -> lora_unet_blocks_3_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_self_attn_q.lora_up.weight -> lora_unet_blocks_3_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_3_self_attn_v.alpha -> lora_unet_blocks_3_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_3_self_attn_v.lora_down.weight -> lora_unet_blocks_3_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_3_self_attn_v.lora_up.weight -> lora_unet_blocks_3_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_cross_attn_k.alpha -> lora_unet_blocks_4_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_cross_attn_k.lora_down.weight -> lora_unet_blocks_4_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_cross_attn_k.lora_up.weight -> lora_unet_blocks_4_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_cross_attn_o.alpha -> lora_unet_blocks_4_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_cross_attn_o.lora_down.weight -> lora_unet_blocks_4_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_cross_attn_o.lora_up.weight -> lora_unet_blocks_4_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_cross_attn_q.alpha -> lora_unet_blocks_4_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_cross_attn_q.lora_down.weight -> lora_unet_blocks_4_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_cross_attn_q.lora_up.weight -> lora_unet_blocks_4_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_cross_attn_v.alpha -> lora_unet_blocks_4_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_cross_attn_v.lora_down.weight -> lora_unet_blocks_4_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_cross_attn_v.lora_up.weight -> lora_unet_blocks_4_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_ffn_0.alpha -> lora_unet_blocks_4_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_ffn_0.lora_down.weight -> lora_unet_blocks_4_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_ffn_0.lora_up.weight -> lora_unet_blocks_4_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_4_ffn_2.alpha -> lora_unet_blocks_4_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_ffn_2.lora_down.weight -> lora_unet_blocks_4_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_4_ffn_2.lora_up.weight -> lora_unet_blocks_4_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_self_attn_k.alpha -> lora_unet_blocks_4_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_self_attn_k.lora_down.weight -> lora_unet_blocks_4_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_self_attn_k.lora_up.weight -> lora_unet_blocks_4_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_self_attn_o.alpha -> lora_unet_blocks_4_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_self_attn_o.lora_down.weight -> lora_unet_blocks_4_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_self_attn_o.lora_up.weight -> lora_unet_blocks_4_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_self_attn_q.alpha -> lora_unet_blocks_4_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_self_attn_q.lora_down.weight -> lora_unet_blocks_4_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_self_attn_q.lora_up.weight -> lora_unet_blocks_4_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_4_self_attn_v.alpha -> lora_unet_blocks_4_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_4_self_attn_v.lora_down.weight -> lora_unet_blocks_4_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_4_self_attn_v.lora_up.weight -> lora_unet_blocks_4_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_cross_attn_k.alpha -> lora_unet_blocks_5_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_cross_attn_k.lora_down.weight -> lora_unet_blocks_5_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_cross_attn_k.lora_up.weight -> lora_unet_blocks_5_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_cross_attn_o.alpha -> lora_unet_blocks_5_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_cross_attn_o.lora_down.weight -> lora_unet_blocks_5_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_cross_attn_o.lora_up.weight -> lora_unet_blocks_5_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_cross_attn_q.alpha -> lora_unet_blocks_5_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_cross_attn_q.lora_down.weight -> lora_unet_blocks_5_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_cross_attn_q.lora_up.weight -> lora_unet_blocks_5_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_cross_attn_v.alpha -> lora_unet_blocks_5_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_cross_attn_v.lora_down.weight -> lora_unet_blocks_5_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_cross_attn_v.lora_up.weight -> lora_unet_blocks_5_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_ffn_0.alpha -> lora_unet_blocks_5_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_ffn_0.lora_down.weight -> lora_unet_blocks_5_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_ffn_0.lora_up.weight -> lora_unet_blocks_5_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_5_ffn_2.alpha -> lora_unet_blocks_5_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_ffn_2.lora_down.weight -> lora_unet_blocks_5_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_5_ffn_2.lora_up.weight -> lora_unet_blocks_5_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_self_attn_k.alpha -> lora_unet_blocks_5_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_self_attn_k.lora_down.weight -> lora_unet_blocks_5_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_self_attn_k.lora_up.weight -> lora_unet_blocks_5_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_self_attn_o.alpha -> lora_unet_blocks_5_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_self_attn_o.lora_down.weight -> lora_unet_blocks_5_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_self_attn_o.lora_up.weight -> lora_unet_blocks_5_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_self_attn_q.alpha -> lora_unet_blocks_5_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_self_attn_q.lora_down.weight -> lora_unet_blocks_5_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_self_attn_q.lora_up.weight -> lora_unet_blocks_5_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_5_self_attn_v.alpha -> lora_unet_blocks_5_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_5_self_attn_v.lora_down.weight -> lora_unet_blocks_5_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_5_self_attn_v.lora_up.weight -> lora_unet_blocks_5_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_cross_attn_k.alpha -> lora_unet_blocks_6_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_cross_attn_k.lora_down.weight -> lora_unet_blocks_6_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_cross_attn_k.lora_up.weight -> lora_unet_blocks_6_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_cross_attn_o.alpha -> lora_unet_blocks_6_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_cross_attn_o.lora_down.weight -> lora_unet_blocks_6_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_cross_attn_o.lora_up.weight -> lora_unet_blocks_6_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_cross_attn_q.alpha -> lora_unet_blocks_6_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_cross_attn_q.lora_down.weight -> lora_unet_blocks_6_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_cross_attn_q.lora_up.weight -> lora_unet_blocks_6_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_cross_attn_v.alpha -> lora_unet_blocks_6_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_cross_attn_v.lora_down.weight -> lora_unet_blocks_6_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_cross_attn_v.lora_up.weight -> lora_unet_blocks_6_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_ffn_0.alpha -> lora_unet_blocks_6_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_ffn_0.lora_down.weight -> lora_unet_blocks_6_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_ffn_0.lora_up.weight -> lora_unet_blocks_6_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_6_ffn_2.alpha -> lora_unet_blocks_6_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_ffn_2.lora_down.weight -> lora_unet_blocks_6_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_6_ffn_2.lora_up.weight -> lora_unet_blocks_6_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_self_attn_k.alpha -> lora_unet_blocks_6_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_self_attn_k.lora_down.weight -> lora_unet_blocks_6_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_self_attn_k.lora_up.weight -> lora_unet_blocks_6_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_self_attn_o.alpha -> lora_unet_blocks_6_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_self_attn_o.lora_down.weight -> lora_unet_blocks_6_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_self_attn_o.lora_up.weight -> lora_unet_blocks_6_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_self_attn_q.alpha -> lora_unet_blocks_6_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_self_attn_q.lora_down.weight -> lora_unet_blocks_6_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_self_attn_q.lora_up.weight -> lora_unet_blocks_6_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_6_self_attn_v.alpha -> lora_unet_blocks_6_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_6_self_attn_v.lora_down.weight -> lora_unet_blocks_6_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_6_self_attn_v.lora_up.weight -> lora_unet_blocks_6_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_cross_attn_k.alpha -> lora_unet_blocks_7_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_cross_attn_k.lora_down.weight -> lora_unet_blocks_7_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_cross_attn_k.lora_up.weight -> lora_unet_blocks_7_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_cross_attn_o.alpha -> lora_unet_blocks_7_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_cross_attn_o.lora_down.weight -> lora_unet_blocks_7_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_cross_attn_o.lora_up.weight -> lora_unet_blocks_7_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_cross_attn_q.alpha -> lora_unet_blocks_7_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_cross_attn_q.lora_down.weight -> lora_unet_blocks_7_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_cross_attn_q.lora_up.weight -> lora_unet_blocks_7_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_cross_attn_v.alpha -> lora_unet_blocks_7_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_cross_attn_v.lora_down.weight -> lora_unet_blocks_7_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_cross_attn_v.lora_up.weight -> lora_unet_blocks_7_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_ffn_0.alpha -> lora_unet_blocks_7_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_ffn_0.lora_down.weight -> lora_unet_blocks_7_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_ffn_0.lora_up.weight -> lora_unet_blocks_7_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_7_ffn_2.alpha -> lora_unet_blocks_7_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_ffn_2.lora_down.weight -> lora_unet_blocks_7_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_7_ffn_2.lora_up.weight -> lora_unet_blocks_7_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_self_attn_k.alpha -> lora_unet_blocks_7_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_self_attn_k.lora_down.weight -> lora_unet_blocks_7_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_self_attn_k.lora_up.weight -> lora_unet_blocks_7_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_self_attn_o.alpha -> lora_unet_blocks_7_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_self_attn_o.lora_down.weight -> lora_unet_blocks_7_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_self_attn_o.lora_up.weight -> lora_unet_blocks_7_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_self_attn_q.alpha -> lora_unet_blocks_7_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_self_attn_q.lora_down.weight -> lora_unet_blocks_7_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_self_attn_q.lora_up.weight -> lora_unet_blocks_7_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_7_self_attn_v.alpha -> lora_unet_blocks_7_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_7_self_attn_v.lora_down.weight -> lora_unet_blocks_7_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_7_self_attn_v.lora_up.weight -> lora_unet_blocks_7_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_cross_attn_k.alpha -> lora_unet_blocks_8_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_cross_attn_k.lora_down.weight -> lora_unet_blocks_8_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_cross_attn_k.lora_up.weight -> lora_unet_blocks_8_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_cross_attn_o.alpha -> lora_unet_blocks_8_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_cross_attn_o.lora_down.weight -> lora_unet_blocks_8_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_cross_attn_o.lora_up.weight -> lora_unet_blocks_8_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_cross_attn_q.alpha -> lora_unet_blocks_8_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_cross_attn_q.lora_down.weight -> lora_unet_blocks_8_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_cross_attn_q.lora_up.weight -> lora_unet_blocks_8_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_cross_attn_v.alpha -> lora_unet_blocks_8_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_cross_attn_v.lora_down.weight -> lora_unet_blocks_8_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_cross_attn_v.lora_up.weight -> lora_unet_blocks_8_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_ffn_0.alpha -> lora_unet_blocks_8_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_ffn_0.lora_down.weight -> lora_unet_blocks_8_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_ffn_0.lora_up.weight -> lora_unet_blocks_8_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_8_ffn_2.alpha -> lora_unet_blocks_8_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_ffn_2.lora_down.weight -> lora_unet_blocks_8_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_8_ffn_2.lora_up.weight -> lora_unet_blocks_8_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_self_attn_k.alpha -> lora_unet_blocks_8_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_self_attn_k.lora_down.weight -> lora_unet_blocks_8_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_self_attn_k.lora_up.weight -> lora_unet_blocks_8_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_self_attn_o.alpha -> lora_unet_blocks_8_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_self_attn_o.lora_down.weight -> lora_unet_blocks_8_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_self_attn_o.lora_up.weight -> lora_unet_blocks_8_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_self_attn_q.alpha -> lora_unet_blocks_8_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_self_attn_q.lora_down.weight -> lora_unet_blocks_8_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_self_attn_q.lora_up.weight -> lora_unet_blocks_8_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_8_self_attn_v.alpha -> lora_unet_blocks_8_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_8_self_attn_v.lora_down.weight -> lora_unet_blocks_8_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_8_self_attn_v.lora_up.weight -> lora_unet_blocks_8_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_cross_attn_k.alpha -> lora_unet_blocks_9_cross_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_cross_attn_k.lora_down.weight -> lora_unet_blocks_9_cross_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_cross_attn_k.lora_up.weight -> lora_unet_blocks_9_cross_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_cross_attn_o.alpha -> lora_unet_blocks_9_cross_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_cross_attn_o.lora_down.weight -> lora_unet_blocks_9_cross_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_cross_attn_o.lora_up.weight -> lora_unet_blocks_9_cross_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_cross_attn_q.alpha -> lora_unet_blocks_9_cross_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_cross_attn_q.lora_down.weight -> lora_unet_blocks_9_cross_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_cross_attn_q.lora_up.weight -> lora_unet_blocks_9_cross_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_cross_attn_v.alpha -> lora_unet_blocks_9_cross_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_cross_attn_v.lora_down.weight -> lora_unet_blocks_9_cross_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_cross_attn_v.lora_up.weight -> lora_unet_blocks_9_cross_attn_v.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_ffn_0.alpha -> lora_unet_blocks_9_ffn_0.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_ffn_0.lora_down.weight -> lora_unet_blocks_9_ffn_0.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_ffn_0.lora_up.weight -> lora_unet_blocks_9_ffn_0.lora_up.weight: torch.Size([8960, 64])
+
+other: lora_unet_blocks_9_ffn_2.alpha -> lora_unet_blocks_9_ffn_2.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_ffn_2.lora_down.weight -> lora_unet_blocks_9_ffn_2.lora_down.weight: torch.Size([64, 8960])
+
+other: lora_unet_blocks_9_ffn_2.lora_up.weight -> lora_unet_blocks_9_ffn_2.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_self_attn_k.alpha -> lora_unet_blocks_9_self_attn_k.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_self_attn_k.lora_down.weight -> lora_unet_blocks_9_self_attn_k.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_self_attn_k.lora_up.weight -> lora_unet_blocks_9_self_attn_k.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_self_attn_o.alpha -> lora_unet_blocks_9_self_attn_o.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_self_attn_o.lora_down.weight -> lora_unet_blocks_9_self_attn_o.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_self_attn_o.lora_up.weight -> lora_unet_blocks_9_self_attn_o.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_self_attn_q.alpha -> lora_unet_blocks_9_self_attn_q.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_self_attn_q.lora_down.weight -> lora_unet_blocks_9_self_attn_q.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_self_attn_q.lora_up.weight -> lora_unet_blocks_9_self_attn_q.lora_up.weight: torch.Size([1536, 64])
+
+other: lora_unet_blocks_9_self_attn_v.alpha -> lora_unet_blocks_9_self_attn_v.alpha: torch.Size([])
+
+other: lora_unet_blocks_9_self_attn_v.lora_down.weight -> lora_unet_blocks_9_self_attn_v.lora_down.weight: torch.Size([64, 1536])
+
+other: lora_unet_blocks_9_self_attn_v.lora_up.weight -> lora_unet_blocks_9_self_attn_v.lora_up.weight: torch.Size([1536, 64])
+

@@ -1,131 +1,203 @@
 import os
+import re
+import math
 import argparse
-import subprocess
-from scenedetect import open_video, SceneManager
-from scenedetect.detectors import ContentDetector
 
-def detect_scenes(video_path):
+from moviepy import *
+
+
+def get_trailing_number(filename: str):
     """
-    Detecta cenas em um vídeo usando PySceneDetect.
-
-    Args:
-        video_path (str): Caminho para o arquivo de vídeo.
-
-    Returns:
-        List[Tuple[float, float]]: Lista de cenas com tempos de início e fim (em segundos).
+    Retorna o inteiro se `filename` (sem extensão) terminar com `_<digits>`.
+    Caso contrário, retorna None.
+    Exemplo:
+      "video_1.mp4" -> 1
+      "movie_25.mp4" -> 25
+      "test.mp4" -> None
     """
-    video = open_video(video_path)
-    scene_manager = SceneManager()
-    scene_manager.add_detector(ContentDetector())
+    base, ext = os.path.splitext(filename)
+    match = re.search(r"_([0-9]+)$", base)
+    if match:
+        return int(match.group(1))
+    return None
 
-    scene_manager.detect_scenes(video)
-    scene_list = scene_manager.get_scene_list()
 
-    return [(scene[0].get_seconds(), scene[1].get_seconds()) for scene in scene_list]
-
-def extract_scenes_ffmpeg(video_path, output_dir, scenes, target_fps=24, duration_sec=None, num_frames=None, reverse=False):
+def create_video_mosaic_with_titles(
+    input_directory, 
+    output_file, 
+    bg_color=None,
+    rows=None,
+    cols=None
+):
     """
-    Extrai as cenas detectadas usando FFmpeg.
-
-    Args:
-        video_path (str): Caminho do vídeo original.
-        output_dir (str): Diretório para salvar as cenas extraídas.
-        scenes (list): Lista de tuplas (start, end) das cenas detectadas.
-        target_fps (int): FPS desejado para os vídeos extraídos.
-        duration_sec (float): Limita a duração máxima de cada cena.
-        num_frames (int): Define um número fixo de frames a serem extraídos.
-        reverse (bool): Inverte o vídeo extraído.
+    1) Coleta todos arquivos .mp4 em `input_directory`.
+    2) Ordena: se o arquivo termina em _NUMERO, eles vêm primeiro em ordem numérica.
+       Arquivos sem número no final são ordenados alfabeticamente depois.
+    3) Cria um `TextClip` mostrando o nome do arquivo e o sobrepõe ao vídeo.
+    4) Define a quantidade de linhas/colunas (rows/cols):
+       - Se rows e cols forem ambos None, usa sqrt para tentar um grid quadrado.
+       - Se apenas um for fornecido, calcula o outro a partir de `len(videos)`.
+       - Se ambos forem fornecidos, usa esses valores diretamente.
+    5) Usa `clips_array` para criar o mosaic e grava no arquivo de saída.
     """
-    os.makedirs(output_dir, exist_ok=True)
 
-    for i, (start, end) in enumerate(scenes):
-        scene_duration = end - start
-
-        if duration_sec and scene_duration > duration_sec:
-            end = start + duration_sec
-        elif num_frames:
-            frame_duration = num_frames / target_fps
-            if scene_duration > frame_duration:
-                end = start + frame_duration
-
-        base_name = os.path.basename(video_path)
-        name, ext = os.path.splitext(base_name)
-        output_name = f"{name}_scene_{i+1:03d}{ext}"
-        output_path = os.path.join(output_dir, output_name)
-
-        ffmpeg_cmd = [
-            "ffmpeg", "-hide_banner", "-loglevel", "error",
-            "-i", video_path, 
-            "-ss", str(start),
-            "-to", str(end),
-            "-r", str(target_fps),
-            "-c:v", "libx264",
-            "-preset", "fast",
-            "-crf", "23",
-            "-c:a", "aac", "-b:a", "128k",
-            output_path
-        ]
-
-        if reverse:
-            ffmpeg_cmd.insert(-1, "-vf")
-            ffmpeg_cmd.insert(-1, "reverse")
-
-        subprocess.run(ffmpeg_cmd, check=True)
-        print(f"Salvou: {output_path}")
-
-def process_directory(input_dir, output_dir, **kwargs):
-    """
-    Processa todos os vídeos dentro de um diretório.
-
-    Args:
-        input_dir (str): Diretório contendo os vídeos.
-        output_dir (str): Diretório onde os vídeos processados serão salvos.
-        kwargs: Parâmetros a serem passados para `extract_scenes_ffmpeg`.
-    """
-    video_extensions = ('.mp4', '.avi', '.mov', '.mkv', '.flv')
-
-    for root, _, files in os.walk(input_dir):
-        for file in files:
-            if file.lower().endswith(video_extensions):
-                input_path = os.path.join(root, file)
-                rel_path = os.path.relpath(root, input_dir)
-                dest_dir = os.path.join(output_dir, rel_path)
-
-                try:
-                    print(f"Detectando cenas em: {input_path}")
-                    scenes = detect_scenes(input_path)
-
-                    if not scenes:
-                        print(f"Nenhuma cena detectada para {input_path}, pulando...")
-                        continue
-
-                    extract_scenes_ffmpeg(input_path, dest_dir, scenes, **kwargs)
-                except Exception as e:
-                    print(f"Erro ao processar {input_path}: {str(e)}")
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Ferramenta de processamento de vídeo com detecção de cenas e extração via FFmpeg",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    # 1) Coleta arquivos
+    all_files_in_dir = sorted(
+        f for f in os.listdir(input_directory) if f.lower().endswith(".mp4")
     )
+    if not all_files_in_dir:
+        print(f"Nenhum arquivo .mp4 encontrado em '{input_directory}'")
+        return
 
-    parser.add_argument("input_dir", help="Diretório contendo os vídeos")
-    parser.add_argument("output_dir", help="Diretório de saída para as cenas extraídas")
-    parser.add_argument("--fps", type=int, default=24, help="FPS desejado")
-    parser.add_argument("--duration", type=float, help="Limite de duração por cena")
-    parser.add_argument("--frames", type=int, help="Número de frames a extrair (alternativa à duração)")
-    parser.add_argument("--reverse", action="store_true", help="Reverter os vídeos extraídos")
+    # 2) Ordena considerando se o nome termina com _NUMBER
+    def sort_key(fname):
+        trailing_num = get_trailing_number(fname)
+        if trailing_num is not None:
+            # (0, n) => primeiro pelo zero, e dentro disso pelo número
+            return (0, trailing_num)
+        else:
+            # (1, fname) => depois, em ordem alfabética
+            return (1, fname)
+
+    video_files = sorted(all_files_in_dir, key=sort_key)
+
+    print("Ordem final dos vídeos:")
+    for vf in video_files:
+        print("  ", vf)
+
+    labeled_clips = []
+    for vf in video_files:
+        full_path = os.path.join(input_directory, vf)
+
+        # Carrega o vídeo
+        clip = VideoFileClip(full_path)
+
+        # Cria o overlay de texto com o nome do arquivo
+        text_overlay = TextClip(
+            font="arial.ttf",     
+            text=vf,              
+            font_size=40,
+            color="white",
+            stroke_color="black",
+            stroke_width=2,
+            method="label",       
+            text_align="center",
+            horizontal_align="center",
+            vertical_align="top",
+            interline=4,
+            transparent=True,
+            duration=clip.duration
+        )
+
+        # Posição top-center
+        text_overlay = text_overlay.with_position(("center", "top"))
+
+        # Composição do vídeo + texto
+        clip_with_text = CompositeVideoClip([clip, text_overlay])
+        labeled_clips.append(clip_with_text)
+
+    # Número total de vídeos
+    n = len(labeled_clips)
+
+    ###########################################################
+    # 4) Lógica para definir rows/cols conforme argumentos    #
+    ###########################################################
+    if rows is None and cols is None:
+        # Se nenhum definido, tenta deixar quadrado
+        n_cols = math.ceil(math.sqrt(n))
+        n_rows = math.ceil(n / n_cols)
+    elif rows is not None and cols is not None:
+        # Ambos definidos
+        n_rows = rows
+        n_cols = cols
+    elif rows is not None:
+        # Só rows
+        n_rows = rows
+        n_cols = math.ceil(n / n_rows)
+    else:
+        # Só cols
+        n_cols = cols
+        n_rows = math.ceil(n / n_cols)
+
+    print(f"Usando grid de {n_rows} linhas × {n_cols} colunas.")
+
+    # Monta a matriz (rows x cols)
+    matrix_of_clips = []
+    idx = 0
+    for _ in range(n_rows):
+        row_clips = []
+        for _ in range(n_cols):
+            if idx < n:
+                row_clips.append(labeled_clips[idx])
+            else:
+                # Se acabaram os clipes, preenche com "blank"
+                blank = ColorClip(size=(128, 128), color=(0, 0, 0)).with_duration(1)
+                row_clips.append(blank)
+            idx += 1
+        matrix_of_clips.append(row_clips)
+
+    # 5) Cria o mosaic e grava
+    final_clip = clips_array(matrix_of_clips, bg_color=bg_color)
+    final_clip.write_videofile(output_file)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Cria um mosaic (grid) de todos os .mp4 de um diretório, ordenando "
+            "primeiro os que terminam em _NUMBER (ordem crescente), depois o resto "
+            "por ordem alfabética. Cada vídeo recebe overlay do seu nome."
+        )
+    )
+    parser.add_argument(
+        "-i", "--input_directory",
+        type=str,
+        required=True,
+        help="Caminho para o diretório contendo arquivos .mp4."
+    )
+    parser.add_argument(
+        "-o", "--output_file",
+        type=str,
+        required=True,
+        help="Nome/caminho do arquivo .mp4 de saída."
+    )
+    parser.add_argument(
+        "--bg_color",
+        default=None,
+        help="Cor de fundo em 'R,G,B'. Use None para transparente."
+    )
+    parser.add_argument(
+        "--rows",
+        type=int,
+        default=None,
+        help="Quantidade de linhas no grid. Se não especificado, calculado automaticamente."
+    )
+    parser.add_argument(
+        "--cols",
+        type=int,
+        default=None,
+        help="Quantidade de colunas no grid. Se não especificado, calculado automaticamente."
+    )
 
     args = parser.parse_args()
 
-    if args.duration and args.frames:
-        parser.error("Não é possível especificar ambos --duration e --frames")
+    bg_color_tuple = None
+    if args.bg_color:
+        try:
+            r, g, b = map(int, args.bg_color.split(","))
+            bg_color_tuple = (r, g, b)
+        except:
+            print("Formato inválido de bg_color. Usando None (transparente).")
+            bg_color_tuple = None
 
-    process_directory(
-        args.input_dir,
-        args.output_dir,
-        target_fps=args.fps,
-        duration_sec=args.duration,
-        num_frames=args.frames,
-        reverse=args.reverse
+    create_video_mosaic_with_titles(
+        input_directory=args.input_directory,
+        output_file=args.output_file,
+        bg_color=bg_color_tuple,
+        rows=args.rows,
+        cols=args.cols
     )
+
+
+if __name__ == "__main__":
+    main()
